@@ -10,8 +10,6 @@ function NewsBoard() {
           
         let url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${import.meta.env.VITE_API_KEY}`;
 
-                                                                                //= category
-
         fetch(url).then(response=>response.json()).then(data => setArticle(data.articles));
 
     },[])
