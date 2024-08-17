@@ -8,7 +8,8 @@ function NewsBoard() {
 
     useEffect(() => {
           
-        let url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${import.meta.env.VITE_API_KEY}`;
+        let url = ` https://newsapi.org/v2/top-headlines?country=us&apiKey=${import.meta.env.VITE_API_KEY}`;
+       
 
                                                                                 //= category
 
