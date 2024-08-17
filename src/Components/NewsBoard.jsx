@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import NewsItem from "./NewsItem";
 
-function NewsBoard({category}) {
+function NewsBoard() {
 
     const [article,setArticle] = useState([]);
 
@@ -14,7 +14,7 @@ function NewsBoard({category}) {
 
         fetch(url).then(response=>response.json()).then(data => setArticle(data.articles));
 
-    },[category])
+    },[])
 
   return (
     

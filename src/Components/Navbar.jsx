@@ -1,4 +1,4 @@
-function Navbar({setCategory}) {
+function Navbar() {
    
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -10,19 +10,19 @@ function Navbar({setCategory}) {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav" style={{cursor:"pointer"}}>
         <li className="nav-item">
-          <div className="nav-link active" aria-current="page" onClick={() => setCategory("technology")}>Technology</div>
+          <div className="nav-link active" aria-current="page">Technology</div>
         </li>
         <li className="nav-item">
-          <div className="nav-link active" aria-current="page" onClick={() => setCategory("business")}>Business</div>
+          <div className="nav-link active" aria-current="page">Business</div>
         </li>
         <li className="nav-item">
-          <div className="nav-link active" aria-current="page" onClick={() => setCategory("health")}>Health</div>
+          <div className="nav-link active" aria-current="page" >Health</div>
         </li>
         <li className="nav-item">
-          <div className="nav-link active" aria-current="page" onClick={() => setCategory("sports")}>Sports</div>
+          <div className="nav-link active" aria-current="page">Sports</div>
         </li>
         <li className="nav-item">
-          <div className="nav-link active" aria-current="page" onClick={() => setCategory("entertainment")}>Entertainment</div>
+          <div className="nav-link active" aria-current="page" >Entertainment</div>
         </li>
       </ul>
     </div>
