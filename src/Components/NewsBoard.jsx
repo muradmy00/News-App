@@ -16,7 +16,7 @@ function NewsBoard() {
 
   return (
     
-    <div>
+    <div>urlToImage
 
      <h2 className="text-center">Latest <span className="badge bg-danger">News</span></h2>
 
