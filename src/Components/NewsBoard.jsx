@@ -3,7 +3,7 @@ import NewsItem from "./NewsItem";
 
 function NewsBoard() {
 
-    const [articles,setArticle] = useState([]);
+    const [article,setArticle] = useState([]);
 
 
     useEffect(() => {
@@ -20,7 +20,7 @@ function NewsBoard() {
 
      <h2 className="text-center">Latest <span className="badge bg-danger">News</span></h2>
 
-    {articles?.map((news,index) =>  {
+    {article?.map((news,index) =>  {
 
         return <NewsItem key={index} title={(news.title).slice(0,50)} description={news.description.slice(0,90)} src={news.urlToImage} url={news.url}/>
     })} 
