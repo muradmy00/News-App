@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import NewsItem from "./NewsItem";
+import.meta.env
 
 function NewsBoard() {
 
@@ -8,7 +9,7 @@ function NewsBoard() {
 
     useEffect(() => {
           
-        let url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${import.meta.env.VITE_API_KEY}`;
+      let url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${import.meta.env.VITE_TEST_VAR}`;
 
         fetch(url).then(response=>response.json()).then(data => setArticle(data.articles));
 
